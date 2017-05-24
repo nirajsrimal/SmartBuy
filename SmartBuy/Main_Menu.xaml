@@ -1,0 +1,44 @@
+﻿<Window x:Class="SmartBuy.Main_Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartBuy"
+        mc:Ignorable="d"
+        Title="Main_Menu" Height="768" Width="1366" WindowState="Maximized" Background="#FFA48686">
+    <Grid HorizontalAlignment="Right" Width="1417" Margin="-27,0,-32,-31">
+        <Grid.Background>
+            <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/bg5.jpg"/>
+        </Grid.Background>
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Image x:Name="image" Visibility="Hidden" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/iphone-6s.jpg" HorizontalAlignment="Left" Height="524" VerticalAlignment="Top" Width="709" Margin="633,106,0,0" OpacityMask="White" IsEnabled="False"/>
+        <Button x:Name="button"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="151" Margin="84,312,0,0" Height="130" BorderBrush="White" Foreground="White" Background="#FFFFFCFC" Click="button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Image x:Name="image1" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/mobile-2-icon.png" OpacityMask="White" Cursor="Hand" RenderTransformOrigin="0.394,1.35" Height="120" Width="141"/>
+        </Button>
+        <Label x:Name="label" Content="Explore." HorizontalAlignment="Left" Height="46" Margin="106,247,0,0" VerticalAlignment="Top" Width="151" FontSize="29.333"/>
+        <Button x:Name="button_Copy"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="187" Margin="84,312,0,0" Height="176" BorderBrush="#FF002FAC" Foreground="White" Background="#FFFFFCFC" Click="button_Click" BorderThickness="3">
+            <Image x:Name="image2" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/mobile-2-icon.png" OpacityMask="White" Cursor="Hand" RenderTransformOrigin="0.394,1.35" Height="166" Width="187"/>
+        </Button>
+        <Button x:Name="button1" HorizontalAlignment="Left" Height="176" Margin="299,312,0,0" VerticalAlignment="Top" Width="192" BorderBrush="#FF002FAC" Background="White" Click="button1_Click" BorderThickness="3">
+
+            <Image x:Name="image3" Source='C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/profile.png' Height="146" Width="188"/>
+        </Button>
+        <Label x:Name="label_Copy" Content="Profile." HorizontalAlignment="Left" Height="46" Margin="331,247,0,0" VerticalAlignment="Top" Width="151" FontSize="29.333"/>
+        <Button x:Name="button2" HorizontalAlignment="Left" Height="105" Margin="66,593,0,0" VerticalAlignment="Top" Width="86" BorderBrush="#FF4DD9F0" Background="{x:Null}" Click="button2_Click" BorderThickness="2">
+            <Image x:Name="image5" Source='C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/logout.png' Height="86" Width="76" RenderTransformOrigin="0.588,-0.116"/>
+        </Button>
+        <Label x:Name="label1" Content="Log Out." HorizontalAlignment="Left" Height="42" Margin="59,694,0,0" VerticalAlignment="Top" Width="129" FontSize="24" FontFamily="Segoe UI Historic"/>
+        <Label x:Name="label2" Content="Hello" HorizontalAlignment="Left" Height="89" Margin="75,93,0,0" VerticalAlignment="Top" Width="160" FontFamily="Verdana" FontSize="53.333"/>
+        <Label x:Name="name" Content="" HorizontalAlignment="Left" Height="89" Margin="223,93,0,0" VerticalAlignment="Top" Width="405" FontSize="53.333" FontFamily="Verdana"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="758" Margin="676,0,0,0" Stroke="White" VerticalAlignment="Top" Width="712" OpacityMask="White"/>
+        <MediaElement Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Videos/OnePlus X.mp4" x:Name="mediaElement" HorizontalAlignment="Left" Height="312" Margin="692,13,0,0" VerticalAlignment="Top" Width="681" LoadedBehavior="Manual" UnloadedBehavior="Manual" Volume="100" >
+        </MediaElement>
+        <Image x:Name="image_Copy" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/oxad.png" HorizontalAlignment="Left" Height="365" Margin="676,371,0,0" VerticalAlignment="Top" Width="703"/>
+
+    </Grid>
+</Window>

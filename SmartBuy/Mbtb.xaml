@@ -1,0 +1,42 @@
+﻿<Window x:Class="SmartBuy.Mbtb"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartBuy"
+        mc:Ignorable="d"
+        Title="Mbtb" Height="768" Width="1366" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="573*"/>
+            <RowDefinition Height="164*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/bg2.jpg"/>
+        </Grid.Background>
+        <Button x:Name="button" HorizontalAlignment="Left" Height="384" Margin="33,228,0,0" VerticalAlignment="Top" Width="426" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Click" Grid.RowSpan="2">
+            <Image x:Name="image" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/icon_mobile.png" Height="428" Width="375"/>
+        </Button>
+        <Button x:Name="button1" HorizontalAlignment="Left" Height="318" Margin="517,264,0,0" VerticalAlignment="Top" Width="291" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="button1_Click" Grid.RowSpan="2">
+            <Image x:Name="image1" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/tablet1.png" Height="278" Width="284"/>
+        </Button>
+        <Button x:Name="button2" HorizontalAlignment="Left" Height="333" Margin="932,251,0,0" VerticalAlignment="Top" Width="372" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button2_Click" Grid.RowSpan="2">
+            <Image x:Name="image2" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/mobtb.png" Height="289" Width="299"/>
+        </Button>
+        <Label x:Name="label" Content="MOBILES" HorizontalAlignment="Left" Height="72" Margin="133,44,0,0" VerticalAlignment="Top" Width="264" FontSize="48" Background="{x:Null}" FontFamily="Microsoft YaHei" Grid.Row="1"/>
+        <Label x:Name="label1" Content="TABLETS." HorizontalAlignment="Left" Height="63" Margin="562,44,0,0" VerticalAlignment="Top" Width="246" FontSize="48" FontFamily="Microsoft YaHei" Grid.Row="1"/>
+        <Label x:Name="label1_Copy" Content="BOTH." HorizontalAlignment="Left" Height="63" Margin="1035,44,0,0" VerticalAlignment="Top" Width="213" FontSize="48" FontFamily="Microsoft YaHei" Grid.Row="1"/>
+        <Button x:Name="home" HorizontalAlignment="Left" Height="106" Margin="1,12,0,0" VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.405,0.475" Background="{x:Null}" BorderBrush="{x:Null}" Click="button2_Click_1">
+            <Image x:Name="image1_Copy" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/home.png"  HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="89" RenderTransformOrigin="1.083,0.591"/>
+        </Button>
+        <Label x:Name="result_Copy" HorizontalAlignment="Left" Height="66" Margin="257,42,0,0" VerticalAlignment="Top" Width="144" FontSize="37.333" Content="Search :"/>
+        <TextBox x:Name="search" HorizontalAlignment="Left" Height="66" Margin="430,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="615" FontSize="29.333" BorderBrush="White"/>
+        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" Height="66" Margin="977,42,0,0" VerticalAlignment="Top" Width="68" FontSize="26.667" BorderBrush="White" Click="button_Copy_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/search.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label2" Content="OR SELECT" HorizontalAlignment="Left" Height="75" Margin="538,150,0,0" VerticalAlignment="Top" Width="255" FontSize="48"/>
+
+    </Grid>
+</Window>

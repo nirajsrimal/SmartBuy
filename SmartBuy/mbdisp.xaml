@@ -1,0 +1,28 @@
+﻿<Window x:Class="SmartBuy.mbdisp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartBuy"
+        mc:Ignorable="d"
+        Title="mbdisp" Height="768" Width="1366" WindowState="Maximized">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4,0,-4,-6" Background="#FF87FFE9">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="525*"/>
+                <RowDefinition Height="212*"/>
+            </Grid.RowDefinitions>
+            <ScrollViewer HorizontalAlignment="Stretch" Margin="0,58,0,69" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.RowSpan="2" Background="White">
+                <WrapPanel Height="auto" Width="1300" x:Name="wp"/>
+            </ScrollViewer>
+            <Label x:Name="result" HorizontalAlignment="Left" Height="66" Margin="20,145,0,0" Grid.Row="1" VerticalAlignment="Top" Width="424" FontSize="29.333"/>
+        </Grid>
+        <Button x:Name="home" HorizontalAlignment="Left" Margin="1274,677,0,-9" Width="84" RenderTransformOrigin="0.405,0.475" Background="{x:Null}" BorderBrush="{x:Null}" Click="button2_Click_1" Height="69" VerticalAlignment="Top">
+            <Image x:Name="image1_Copy" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/home.png"  HorizontalAlignment="Left" Height="61" VerticalAlignment="Top" Width="74" RenderTransformOrigin="1.083,0.591"/>
+        </Button>
+        <Button x:Name="button3" HorizontalAlignment="Left" Margin="1197,677,0,1" Width="77" Background="{x:Null}" BorderBrush="{x:Null}" Click="button3_Click">
+            <Image x:Name="image3" Source="C:/Users/Niraj/Documents/Visual Studio 2015/Projects/SmartBuy/Photos/back.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="53" RenderTransformOrigin="0.79,0.03"/>
+        </Button>
+
+    </Grid>
+</Window>
